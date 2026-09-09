@@ -1,0 +1,271 @@
+
+:root {
+    --fundo-escuro: #1a1a1a;
+    --dourado: #c69c6d;
+    --texto-claro: #ffffff;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    background-color: var(--fundo-escuro); 
+    
+    
+    background-image: url('image_popbarbearia.png'); 
+    
+    
+    background-repeat: repeat; 
+    
+    
+    background-size: 600px; 
+    
+   
+    background-attachment: fixed; 
+    
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    color: var(--texto-claro);
+}
+.primeirasecao {
+   display: flex;
+    align-items: center;
+   
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px;
+    gap: 50px;
+    
+    
+    background-color: rgba(26, 26, 26, 0.85); 
+    
+    
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    
+    
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    
+}
+
+.menu-topo {
+    background-color: #000000;
+    padding: 20px 0;
+    position: sticky; 
+    top: 0;
+    z-index: 100; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.menu-topo nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-topo a {
+    color: var(--texto-claro);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-topo a:hover {
+    color: var(--dourado);
+}
+
+
+.secao-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+    gap: 50px;
+}
+
+.hero-texto {
+    flex: 1; 
+}
+
+.hero-texto h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.hero-imagem {
+    flex: 1; 
+}
+
+.hero-imagem img {
+    width: 100%;
+    border-radius: 20px;
+    border: 15px solid var(--dourado); 
+    box-sizing: border-box;
+}
+
+
+.secao-cards {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.titulo-destaque {
+    color: var(--dourado);
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: var(--dourado);
+    color: var(--texto-claro);
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+.card-centro {
+    border: 2px solid #9d6fff; 
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.secao-simples {
+    background-color: #2a2a2a; 
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.secao-simples h1 {
+    color: var(--dourado);
+    margin-top: 0;
+}
+
+.secao-simples p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #444;
+    font-size: 18px;
+}
+
+th {
+    color: var(--dourado);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+input, select {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    background-color: var(--dourado);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a37c52; 
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-social {
+    background-color: transparent; 
+    color: var(--dourado);
+    border: 2px solid var(--dourado);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+
+
+.btn-social.desativado:hover {
+    background-color: transparent;
+}

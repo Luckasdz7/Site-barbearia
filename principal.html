@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barbearia</title>
+</head>
+<body>
+
+   
+    <header class="menu-topo">
+        <nav>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#comunidade">Comunidade</a>
+            <a href="#agendamento">Agendar</a>
+        </nav>
+    </header>
+
+    
+    <section id="sobre" class="primeirasecao">
+        <div class="hero-texto">
+            <h1>Descubra o Seu Estilo Perfeito</h1>
+            <p>
+                Na nossa barbearia, nossa missão é proporcionar uma experiência excepcional que combina <strong>técnicas tradicionais</strong> com estética moderna. 
+                <br><br>
+                Acreditamos em realçar o seu estilo natural enquanto garantimos que cada visita seja pessoal e satisfatória. Seu visual é o nosso orgulho.
+            </p>
+        </div>
+        <div class="hero-imagem">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&q=80" alt="Interior da Barbearia">
+        </div>
+    </section>
+
+    
+    <section id="servicos" class="secao-cards">
+        <h1 class="titulo-destaque">Principais Serviços</h1>
+        
+        <div class="cards-container">
+            <div class="card">
+                <h2>Cortes Tradicionais</h2>
+                <p>Experimente o cuidado clássico com nossos cortes tradicionais que misturam técnicas atemporais com estilos modernos para um visual alinhado.</p>
+            </div>
+            
+            <div class="card card-centro">
+                <h2>Barba com Toalha Quente</h2>
+                <p>Relaxe com nosso serviço de toalha quente, usando toalhas suaves e produtos premium para um barbear rente e confortável.</p>
+            </div>
+            
+            <div class="card">
+                <h2>Consultoria de Estilo</h2>
+                <p>Receba conselhos personalizados com nossas consultorias de estilo, desenhadas para ajudar você a encontrar o corte que se adapta à sua individualidade.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="comunidade" class="secao-simples">
+        <h1>Acompanhe nosso estilo</h1>
+        <p>
+            Quer ficar por dentro dos nossos cortes, novidades e trabalhos? Siga nossa Barbearia nas redes sociais.
+            <br><br>
+            Por lá você encontra inspirações para o próximo corte e acompanha os estilos que estão fazendo sucesso na barbearia.
+        </p>
+        
+        
+        <div class="redes-sociais">
+            <button class="btn-social " disabled>WhatsApp</button>
+            <button class="btn-social " disabled>Instagram</button>
+            <button class="btn-social " disabled>TikTok</button>
+        </div>
+    </section>
+
+    
+    <section id="agendamento" class="secao-simples">
+        <h1>Agende seu horário</h1>
+        <form>
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+            
+            <label for="data">Data do Serviço:</label>
+            <input type="date" id="data" name="data" required>
+            
+            <label for="servico">O que vamos fazer?</label>
+            <select id="servico" name="servico">
+                <option value="corte">Corte Simples</option>
+                <option value="barba">Barba</option>
+                <option value="completo">Corte + Barba</option>
+            </select>
+
+            <button type="submit">Confirmar Agendamento</button>
+        </form>
+    </section>
+
+</body>
+</html>
