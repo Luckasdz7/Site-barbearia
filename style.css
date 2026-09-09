@@ -269,3 +269,65 @@ button:hover {
 .btn-social.desativado:hover {
     background-color: transparent;
 }
+
+
+@media (max-width: 768px) {
+    .primeirasecao {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px 20px;
+        padding: 30px;
+        gap: 20px;
+    }
+    
+    .secao-hero {
+        flex-direction: column;
+        text-align: center;
+        margin: 40px 20px;
+        gap: 30px;
+    }
+
+    .hero-texto h1 {
+        font-size: 32px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .menu-topo nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .titulo-destaque {
+        text-align: center;
+        font-size: 28px;
+    }
+}
+
+/* Celulares (telas até 480px) */
+@media (max-width: 480px) {
+    .menu-topo a {
+        font-size: 16px;
+    }
+
+    .hero-texto h1 {
+        font-size: 28px;
+    }
+
+    .primeirasecao, .secao-simples, .secao-cards {
+        margin: 30px 10px;
+        padding: 20px;
+    }
+
+    .redes-sociais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-social {
+        width: 100%;
+        max-width: 250px;
+    }
+}
